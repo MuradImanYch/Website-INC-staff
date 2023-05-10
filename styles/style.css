@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: SF-UI-Display-300;
+    font-display: swap;
+    src: url("../assets/fonts/SF-UI-Display-300.otf");
+}
+@font-face {
+    font-family: SF-UI-Display-500;
+    font-display: swap;
+    src: url("../assets/fonts/SF-UI-Display-500.otf");
+}
+@font-face {
+    font-family: SF-UI-Display-700;
+    font-display: swap;
+    src: url("../assets/fonts/SF-UI-Display-700.otf");
+}
+@font-face {
+    font-family: Century-Gothic-700;
+    font-display: swap;
+    src: url("../assets/fonts/Century-Gothic-700.ttf");
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+header {
+    background: #2D2927;
+    height: 92px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header h1 span {
+    color: #FFC410;
+}
+header h1 {
+    color: #fff;
+    font-size: 39.1837px;
+    line-height: 48px;
+    font-family: Century-Gothic-700;
+}
+header button {
+    width: 127px;
+    height: 45px;
+    background: #FFC410;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    font-size: 26.087px;
+    line-height: 31px;
+    font-family: serif;
+    color: #fff;
+    font-family: SF-UI-Display-500;
+}
+header button:hover {
+    background: #ffd555;
+    transition: 0.3s;
+    color: #2D2927;
+}
+
+#bestEmployee {
+    height: 85vh;
+}
+#bestEmployee .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#bestEmployee h2 {
+    font-size: 55.1819px;
+    line-height: 60px;
+    color: #373331;
+    width: 680px;
+    font-family: SF-UI-Display-700;
+}
+#bestEmployee h2 span {
+    color: #FFC410;
+}
+#bestEmployee p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #373331;
+    width: 450px;
+    font-family: SF-UI-Display-300;
+    margin: 30px 0;
+}
+#bestEmployee button {
+    width: 190px;
+    height: 64px;
+    background: #FFC410;
+    border-radius: 8px;
+    border: 0;
+    font-size: 26.087px;
+    line-height: 31px;
+    color: #fff;
+    font-family: SF-UI-Display-500;
+    cursor: pointer;
+}
+#bestEmployee button:hover {
+    background: #ffd555;
+    transition: 0.3s;
+    color: #2D2927;
+}
+#bestEmployee .col:last-child {
+    margin: 0 250px 0 0;
+}
+#bestEmployee .img {
+    width: 300px;
+    height: 300px;
+    background: url('../assets/img/employee.jpg') no-repeat center/cover;
+    border-radius: 50%;
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1200px;
+    }
+    #bestEmployee h2 {
+        font-size: 65.1819px;
+        line-height: 60px;
+        width: 800px;
+    }
+    #bestEmployee p {
+        font-size: 24px;
+        width: 640px;
+        line-height: 30px;
+    }
+    #bestEmployee .img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .container {
+        width: 1600px;
+    }
+    #bestEmployee h2 {
+        font-size: 105.1819px;
+        line-height: 100px;
+        width: 1100px;
+    }
+    #bestEmployee p {
+        font-size: 28px;
+        width: 700px;
+        line-height: 40px;
+    }
+    #bestEmployee .img {
+        width: 600px;
+        height: 600px;
+    }
+}
