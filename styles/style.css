@@ -39,7 +39,7 @@ header .container {
     align-items: center;
     height: 100%;
 }
-header h1 span {
+header h1 span, #bestEmployee h2 span {
     color: #FFC410;
 }
 header h1 {
@@ -48,7 +48,7 @@ header h1 {
     line-height: 48px;
     font-family: Century-Gothic-700;
 }
-header button {
+header button, #bestEmployee button, #bestProject button {
     width: 127px;
     height: 45px;
     background: #FFC410;
@@ -61,14 +61,14 @@ header button {
     color: #fff;
     font-family: SF-UI-Display-500;
 }
-header button:hover {
+header button:hover, #bestEmployee button:hover, #bestProject button:hover {
     background: #ffd555;
     transition: 0.3s;
     color: #2D2927;
 }
 
 #bestEmployee {
-    height: 85vh;
+    height: 100vh;
 }
 #bestEmployee .container {
     height: 100%;
@@ -83,9 +83,6 @@ header button:hover {
     width: 680px;
     font-family: SF-UI-Display-700;
 }
-#bestEmployee h2 span {
-    color: #FFC410;
-}
 #bestEmployee p {
     font-size: 15px;
     line-height: 20px;
@@ -98,19 +95,6 @@ header button:hover {
 #bestEmployee button {
     width: 190px;
     height: 64px;
-    background: #FFC410;
-    border-radius: 8px;
-    border: 0;
-    font-size: 26.087px;
-    line-height: 31px;
-    color: #fff;
-    font-family: SF-UI-Display-500;
-    cursor: pointer;
-}
-#bestEmployee button:hover {
-    background: #ffd555;
-    transition: 0.3s;
-    color: #2D2927;
 }
 #bestEmployee .col:last-child {
     margin: 0 250px 0 0;
@@ -120,7 +104,74 @@ header button:hover {
     height: 300px;
     background: url('../assets/img/employee.jpg') no-repeat center/cover;
     border-radius: 50%;
+    box-shadow: inset 0px -10px 50px rgba(0, 0, 0, 1);
 }
+
+#bestProject {
+    background: #2D2927;
+    padding: 50px 0 80px 0;
+    min-height: 100vh;
+}
+#bestProject .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bestProject h2 {
+    font-size: 55.1819px;
+    line-height: 60px;
+    color: #fff;
+    width: 600px;
+    font-family: SF-UI-Display-700;
+}
+#bestProject h2 span {
+    color: #FFC410;
+}
+#bestProject p {
+    width: 450px;
+    color: #fff;
+    font-family: SF-UI-Display-300;
+    margin: 30px 0;
+    font-size: 15px;
+}
+#bestProject .img {
+    width: 400px;
+    height: 400px;
+    background: url('../assets/ico/bestProject.png') no-repeat center/contain;
+}
+#bestProject .col:last-child {
+    margin: 50px 0 0 0;
+    flex-direction: row-reverse;
+    position: relative;
+}
+#bestProject .col:last-child .img {
+    background: url('../assets/img/projects.png') no-repeat center/contain;
+    position: absolute;
+    left: 0;
+    top: -150px;
+}
+#bestProject .parallelogram {
+    width: 350px;
+    height: 250px;
+    background-color: #fff;
+    position: relative;
+    transform: skew(-20deg) skewY(-5deg);
+}
+#bestProject .parallelogram::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 100px;
+    height: 100%;
+    background-color: #fff;
+    transform: skew(20deg);
+}
+#bestProject .col:last-child button {
+    width: 206px;
+    height: 64px;
+}
+
 
 @media (min-width: 1280px) {
     .container {
@@ -128,7 +179,6 @@ header button:hover {
     }
     #bestEmployee h2 {
         font-size: 65.1819px;
-        line-height: 60px;
         width: 800px;
     }
     #bestEmployee p {
@@ -139,6 +189,30 @@ header button:hover {
     #bestEmployee .img {
         width: 400px;
         height: 400px;
+    }
+
+    #bestProject h2 {
+        font-size: 65.1819px;
+    }
+    #bestProject p {
+        font-size: 24px;
+        width: 640px;
+        line-height: 30px;
+    }
+    #bestProject .col:last-child .img {
+        width: 500px;
+        height: 500px;
+        top: -170px;
+        left: -40px;
+    }
+    #bestProject .parallelogram {
+        width: 450px;
+        height: 300px;
+    }
+    #bestProject .parallelogram::before {
+        left: -70px;
+        width: 150px;
+        height: 100%;
     }
 }
 
@@ -159,5 +233,34 @@ header button:hover {
     #bestEmployee .img {
         width: 600px;
         height: 600px;
+    }
+
+    #bestProject { 
+        padding: 100px 0;
+    }
+    #bestProject h2 {
+        font-size: 105.1819px;
+        line-height: 100px;
+        width: 1100px;
+    }
+    #bestProject p {
+        font-size: 28px;
+        width: 700px;
+        line-height: 40px;
+    }
+    #bestProject .col:last-child {
+        margin: 150px 0 0 0;
+    }
+    #bestProject .col:last-child .img {
+        left: -140px;
+    }
+    #bestProject .parallelogram {
+        width: 400px;
+        height: 350px;
+    }
+    #bestProject .parallelogram::before {
+        left: -210px;
+        width: 300px;
+        height: 100%;
     }
 }
