@@ -5,6 +5,11 @@
     text-decoration: none;
 }
 @font-face {
+    font-family: SF-UI-Display-200;
+    font-display: swap;
+    src: url("../assets/fonts/SF-UI-Display-200.otf");
+}
+@font-face {
     font-family: SF-UI-Display-300;
     font-display: swap;
     src: url("../assets/fonts/SF-UI-Display-300.otf");
@@ -39,7 +44,7 @@ header .container {
     align-items: center;
     height: 100%;
 }
-header h1 span, #bestEmployee h2 span {
+header h1 span, #bestEmployee h2 span, footer .logo span {
     color: #FFC410;
 }
 header h1 {
@@ -61,7 +66,7 @@ header button, #bestEmployee button, #bestProject button {
     color: #fff;
     font-family: SF-UI-Display-500;
 }
-header button:hover, #bestEmployee button:hover, #bestProject button:hover {
+header button:hover, #bestEmployee button:hover, #bestProject button:hover, footer .right .col:last-child button:hover {
     background: #ffd555;
     transition: 0.3s;
     color: #2D2927;
@@ -108,7 +113,7 @@ header button:hover, #bestEmployee button:hover, #bestProject button:hover {
 }
 
 #bestProject {
-    background: #2D2927;
+    background: #373331;
     padding: 50px 0 80px 0;
     min-height: 100vh;
 }
@@ -171,6 +176,100 @@ header button:hover, #bestEmployee button:hover, #bestProject button:hover {
     width: 206px;
     height: 64px;
 }
+#bestProject .btnArrow {
+    display: flex;
+    align-items: center;
+}
+#bestProject .btnArrow img {
+    width: 150px;
+    height: 30px;
+    margin: 0 0 0 20px;
+}
+
+footer {
+    padding: 50px 0;
+    background: #2D2927;
+}
+footer .logo {
+    font-family: Century-Gothic-700;
+    font-size: 29.1837px !important;
+    line-height: 48px;
+    color: #fff;
+}
+footer .col:first-child p:nth-child(2) {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    font-family: SF-UI-Display-300;
+    width: 250px;
+    margin: 20px 0 0 0;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+footer .left p {
+    font-size: 25.8251px;
+    line-height: 44px;
+    color: #FFFFFF;
+    font-family: Century-Gothic-700;
+}
+footer .left a {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #F7F7EE;
+    font-family: SF-UI-Display-300;
+}
+footer .col:last-child a:nth-child(2) {
+    margin: 20px 0 0 0;
+}
+footer .right {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .right .col:first-child p {
+    font-size: 23.9864px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-family: SF-UI-Display-700;
+    width: 248px;
+}
+footer .right .col:first-child img {
+    width: 240px;
+    transform: rotate(180deg);
+}
+footer .right .col:last-child p {
+    font-size: 20px;
+    line-height: 20px;
+    width: 259px;
+    letter-spacing: -0.02em;
+    font-family: SF-UI-Display-200;
+    color: #FFFFFF;
+}
+footer .right .col:last-child button {
+    width: 202px;
+    height: 54px;
+    background: #FFC410;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    margin: 20px 0 0 0;
+    font-size: 20.087px;
+    line-height: 31px;
+    font-family: SF-UI-Display-500;
+    color: #FFFFFF;
+}
 
 
 @media (min-width: 1280px) {
@@ -213,6 +312,27 @@ header button:hover, #bestEmployee button:hover, #bestProject button:hover {
         left: -70px;
         width: 150px;
         height: 100%;
+    }
+
+    footer .left p {
+        font-size: 35.8251px;
+    }
+    footer .left a {
+        font-size: 24px;
+    }
+    footer .logo {
+        font-size: 39.1837px !important;
+    }
+    footer .col:first-child p:nth-child(2) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    footer .right .col:first-child p {
+        font-size: 35.9864px;
+        width: 388px;
+    }
+    footer .right .col:first-child img {
+        width: 320px;
     }
 }
 
@@ -262,5 +382,28 @@ header button:hover, #bestEmployee button:hover, #bestProject button:hover {
         left: -210px;
         width: 300px;
         height: 100%;
+    }
+
+    footer .col:first-child p:nth-child(2) {
+        font-size: 24px;
+        width: 320px;
+    }
+    footer .right .col:first-child p {
+        width: 478px;
+        font-size: 63.9864px;
+        line-height: 60px;
+    }
+    footer .right .col:first-child img {
+        width: 500px;
+        height: 80px;
+        margin: 15px 0 0 0;
+    }
+    footer .right .col:last-child button {
+        width: 262px;
+        height: 64px;
+        font-size: 26.087px;
+    }
+    footer .right .col:last-child p {
+        margin: 70px 0 0 0;
     }
 }
